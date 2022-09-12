@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+<item
+    android:id="@+id/icon1"
+    android:icon="@drawable/h"
+    android:title="Chatt1"
+    android:iconTint="#00DDA3"
+    android:checked="true"
+    />
+    <item
+        android:id="@+id/icon2"
+        android:icon="@drawable/n"
+        android:title="Chatt2"
+        android:iconTint="#00DDA3"
+        />
+    </group>
+</menu>
