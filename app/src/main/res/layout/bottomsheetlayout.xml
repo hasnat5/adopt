@@ -35,19 +35,18 @@
         android:layout_width="match_parent"
         android:outlineSpotShadowColor="@color/black"
         android:layout_height="wrap_content"
-        android:padding="8dp" >
+        android:padding="10dp" >
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:backgroundTint="@color/white"
-            android:src="@drawable/kirim" />
+            android:src="@drawable/chat" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/robotoregular"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:text="Message"
             android:textSize="16sp"
@@ -65,20 +64,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:outlineSpotShadowColor="@color/black"
-        android:padding="8dp" >
+        android:padding="10dp" >
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:backgroundTint="@color/white"
-            android:src="@drawable/fol" />
+            android:src="@drawable/follow" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Follow"
             android:fontFamily="@font/robotoregular"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:layout_marginLeft="30dp"/>
@@ -94,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:outlineSpotShadowColor="@color/black"
-        android:padding="8dp" >
+        android:padding="10dp" >
 
         <ImageView
             android:layout_width="25dp"
@@ -105,7 +103,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:fontFamily="@font/robotoregular"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="Location"
@@ -122,19 +119,18 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp" >
+        android:padding="10dp" >
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:backgroundTint="@color/white"
-            android:src="@drawable/sendm" />
+            android:src="@drawable/share" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/robotoregular"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:text="Share"
             android:textSize="16sp"

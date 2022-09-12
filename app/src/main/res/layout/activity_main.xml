@@ -27,6 +27,7 @@
             android:layout_marginLeft="16dp"
             android:layout_toRightOf="@id/logo"
             android:text="Ur Adopted"
+            android:fontFamily="@font/robotobold"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />

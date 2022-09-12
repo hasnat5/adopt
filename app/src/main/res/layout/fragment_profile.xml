@@ -1,252 +1,365 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".fragmentsTab.ProfileFragment">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="340dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#00DDA3"
-        android:clickable="true"
-        app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/fotopro"
-            android:layout_gravity="center"
-            android:layout_marginRight="120dp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#00DDA3"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/fotopro" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Intan Nafisyah"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="14sp"
+                        android:text="intannafi36@gmail.com"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right">
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/setting" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
+            android:id="@+id/general"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/robotoregular"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="16dp"
-            android:layout_marginRight="5dp"
+            android:layout_below="@id/cardview"
+            android:layout_alignStart="@+id/cardview"
             android:layout_gravity="center"
-            android:text="Intan Nafisyah" />
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/robotobold"
+            android:text="General"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/personal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/general"
+            android:layout_alignStart="@+id/general"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/person" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Personal Data"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/underline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/personal"
+            android:layout_alignStart="@+id/favorite"
+            android:layout_alignEnd="@+id/cardview"
+            android:background="@color/underline" />
+
+        <LinearLayout
+            android:id="@+id/favorite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/underline1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/love" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Favorite"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/underline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/favorite"
+            android:layout_alignStart="@+id/favorite"
+            android:layout_alignEnd="@+id/cardview"
+            android:background="@color/underline" />
+
+        <LinearLayout
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/underline2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Activity History"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right" />
+
+            </LinearLayout>
+        </LinearLayout>
 
         <TextView
+            android:id="@+id/support"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/robotoregular"
-            android:text="intannafi36@gmail.com"
-            android:layout_gravity="center"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_below="@id/history"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/robotobold"
+            android:text="Support"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="137dp"
-            android:background="@drawable/seting" />
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/support"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/mail" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Contact"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="240dp"
-        android:layout_marginLeft="-340dp"
-        android:fontFamily="@font/robotobold"
-        android:text="General"
-        android:textColor="@color/black"
-        android:textSize="25dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
 
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="215dp"
-        android:layout_marginLeft="-77dp"
-        android:src="@drawable/person" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/robotoregular"
-        android:textSize="16dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/black"
-        android:text="Personal Data"/>
+            </LinearLayout>
+        </LinearLayout>
 
-    <View
-        android:layout_width="325dp"
-        android:layout_height="1dp"
-        android:layout_marginLeft="-142dp"
-        android:layout_marginTop="255dp"
-        android:background="@color/underline" />
+        <View
+            android:id="@+id/underline4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/contact"
+            android:layout_centerHorizontal="true"
+            android:background="@color/underline" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kanan"
-        android:layout_marginTop="220dp"
-        android:layout_marginLeft="-28dp" />
+        <LinearLayout
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/underline4"
+            android:gravity="center_vertical">
 
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/love"
-        android:layout_marginTop="270dp"
-        android:layout_marginLeft="-323dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/robotoregular"
-        android:text="Favorite"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:layout_marginTop="265dp"
-        android:layout_marginLeft="10dp"/>
-
-    <View
-        android:layout_width="325dp"
-        android:layout_height="1dp"
-        android:background="@color/underline"
-        android:layout_marginTop="310dp"
-        android:layout_marginLeft="-100dp"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kanan"
-        android:layout_marginTop="275dp"
-        android:layout_marginLeft="-28dp"/>
-
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/satu"
-        android:layout_marginTop="320dp"
-        android:layout_marginLeft="-325dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/robotoregular"
-        android:text="Activity History"
-        android:layout_marginTop="315dp"
-        android:layout_marginLeft="10dp"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kanan"
-        android:layout_marginTop="325dp"
-        android:layout_marginLeft="148dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/robotobold"
-        android:text="Support"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="-330dp"/>
-
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/mail"
-        android:layout_marginTop="455dp"
-        android:layout_marginLeft="-83dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/robotoregular"
-        android:textColor="@color/black"
-        android:text="Contact"
-        android:layout_marginTop="450dp"
-        android:textSize="16dp"
-        android:layout_marginLeft="10dp"/>
-
-    <View
-        android:layout_width="325dp"
-        android:layout_height="1dp"
-        android:background="@color/underline"
-        android:layout_marginTop="493dp"
-        android:layout_marginLeft="-100dp"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kanan"
-        android:layout_marginTop="460dp"
-        android:layout_marginLeft="-25dp"/>
-
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/dua"
-        android:layout_marginTop="510dp"
-        android:layout_marginLeft="-325dp"/>
-
-    <View
-        android:layout_width="325dp"
-        android:layout_height="2dp"
-        android:background="@color/underline"
-        android:layout_marginTop="550dp"
-        android:layout_marginLeft="-35dp"/>
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
-        android:fontFamily="@font/robotoregular"
-        android:text="Privacy Police"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:layout_marginLeft="-280dp"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kanan"
-        android:layout_marginTop="518dp"
-        android:layout_marginLeft="153dp"/>
-
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:src="@drawable/tiga"
-        android:layout_marginTop="562dp"
-        android:layout_marginLeft="-323dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/robotoregular"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:text="About"
-        android:layout_marginTop="557dp"
-        android:layout_marginLeft="10dp"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/kanan"
-        android:layout_marginTop="567dp"
-        android:layout_marginLeft="212dp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/privacy" />
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="Privacy Police"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/underline5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/privacy"
+            android:layout_alignStart="@+id/favorite"
+            android:layout_alignEnd="@+id/cardview"
+            android:background="@color/underline" />
+
+        <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/underline5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>
