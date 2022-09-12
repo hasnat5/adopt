@@ -66,4 +66,5 @@ public class HomeFragment extends Fragment {
 
     public void slide(View view) {
     }
+
 }

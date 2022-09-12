@@ -1,18 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentsTab.ProfileFragment">
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00DDA3"
+        android:clickable="true"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/fotopro"
+            android:layout_gravity="center"
+            android:layout_marginRight="120dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:text="Intan Nafisyah" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotoregular"
+            android:text="intannafi36@gmail.com"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="137dp"
+            android:background="@drawable/seting" />
+
+    </androidx.cardview.widget.CardView>
+
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile"
-        android:textSize="36sp"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="240dp"
+        android:layout_marginLeft="-340dp"
+        android:fontFamily="@font/robotobold"
+        android:text="General"
         android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:textSize="25dp" />
 
-</RelativeLayout>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="-77dp"
+        android:src="@drawable/person" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="16dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:text="Personal Data"/>
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="-142dp"
+        android:layout_marginTop="255dp"
+        android:background="@color/underline" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kanan"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="-28dp" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/love"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="-323dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoregular"
+        android:text="Favorite"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="-100dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kanan"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="-28dp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/satu"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="-325dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotoregular"
+        android:text="Activity History"
+        android:layout_marginTop="315dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kanan"
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="148dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotobold"
+        android:text="Support"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="-330dp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/mail"
+        android:layout_marginTop="455dp"
+        android:layout_marginLeft="-83dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/black"
+        android:text="Contact"
+        android:layout_marginTop="450dp"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginTop="493dp"
+        android:layout_marginLeft="-100dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kanan"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="-25dp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/dua"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="-325dp"/>
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="2dp"
+        android:background="@color/underline"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="-35dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Privacy Police"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="-280dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kanan"
+        android:layout_marginTop="518dp"
+        android:layout_marginLeft="153dp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/tiga"
+        android:layout_marginTop="562dp"
+        android:layout_marginLeft="-323dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="About"
+        android:layout_marginTop="557dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kanan"
+        android:layout_marginTop="567dp"
+        android:layout_marginLeft="212dp" />
+
+
+
+</LinearLayout>

@@ -10,4 +10,5 @@
     <color name="base">#00DDA3</color>
     <color name="transparent">#00000000</color>
     <color name="gray">#9E9E9E</color>
+    <color name="underline">#000000</color>
 </resources>
